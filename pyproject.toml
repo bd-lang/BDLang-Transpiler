@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "bdlang"
+version = "0.1.0"
+description = "A Bangla-to-Python transpiler"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{ include = "bdlang" }]
+
+[tool.poetry.scripts]
+bdlang = "bdlang.cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
